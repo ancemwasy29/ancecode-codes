@@ -1,0 +1,252 @@
+body {
+  inset: 0;
+  background-color: whitesmoke;
+}
+
+
+/* Header styling */
+.headerContainer {
+  background-color: rgba(10, 153, 153, 0.712);
+  color: bisque;
+  flex-wrap: wrap;
+  display: flex;
+  flex: 1;
+  font-size: 25px;
+  height: 10%;
+  margin: 0;
+}
+
+
+.logoContainer {
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 2%;
+}
+.logoContainer img {
+  width: 100%;
+margin-top: 1%;
+  border-radius: 50%;
+}
+.searchContainer {
+  width: 50%;
+  padding: 0 5%;
+  display: inline-flex;
+  margin: 1%;
+  align-items: center;
+}
+
+.searcInput{
+width: 80%;
+}
+
+.searcInput input {
+  border-radius: 20px 0 0 20px;
+  padding: 2% 8%;
+  font-size: 25px;
+  border: 2.5px solid aqua;
+  width: 100%;
+}
+
+.laptopTypes select {
+  font-size: 28px;
+  padding: 7% 8%;
+  border: 3px solid aqua;
+  width: 110%;
+  height: 100%;
+}
+
+.laptopTypes select option {
+  font-size: 25px;
+  padding: 2% 8%;
+}
+
+.searchIconContainer{
+    font-size: 30px;
+  border: 2px solid aqua;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  margin-left: 1%; 
+  padding: 1.1% 2%;
+  background-color: rgb(5, 90, 57); 
+}
+
+.userAccountContainer{
+     width: 5%;
+     margin: 4% 3%;
+}
+
+.cartIcoinContainer{
+     margin: 4% 1%; 
+}
+
+/*  RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) { /* Tablets*/
+  .headerContainer{
+    width: 100%;
+  }
+  .logoContainer img {
+    width: 90%;
+    margin-top: 15%;
+  }
+
+
+  .laptopTypes select {
+    font-size: 23px;
+    padding: 5%;
+  }
+
+  .searchIconContainer{
+    font-size: 35px;
+  padding: 0% 4%;
+  }
+}
+
+@media (max-width: 768px) { /* Mobiles */
+  .headerContainer{
+    width: max-content;
+  }
+  
+  .logoContainer img {
+    width: 90%;
+    margin-top: 20%;
+  }
+  
+  .searchContainer {
+    width: 30%;
+    padding: 3px;
+  }
+  .searcInput input {
+    width: 90%;
+    font-size: 20px;
+    padding: 2.5%;
+    padding-left: 20px;
+  }
+  .laptopTypes select {
+    font-size: 20px;
+    padding: 5%;
+  }
+
+  .searchIconContainer{
+    font-size: 30px;
+  padding: 0% 4%;
+  }
+  .userAccountContainer{
+    width: 1%;
+    margin: 4% 2%;
+  }
+  .cartIcoinContainer{
+    margin: 4% 3%; 
+}
+
+}
+
+/* Navbar Styling*/
+
+.linksContainer{
+     font-size: 25px;
+     border-top: 2px solid grey;
+     border-bottom: 2px solid grey;
+     margin: 0;
+     flex-wrap: wrap;
+     display: flex;
+     flex: 1;
+     padding: 1%;
+}
+
+.listOfLinks{
+     display: inline-flex;
+}
+
+.listOfLinks div{
+     display: inline-flex;
+     margin-left: 5%;
+     margin-left: 10%;
+     
+}
+.linkToHome{
+  background-color: rgb(241, 239, 239);
+  border-radius: 20px;
+  padding: 1rem;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.linkToHome:hover{
+  color: aqua;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: all 1s ease-out;
+
+  }
+
+.linkToPc div{
+  display: inline-flex;
+  margin-left: 5%;
+  padding-left: 10%;
+  cursor: pointer;
+}
+
+.linkToPc div form select:hover{
+  color: aqua;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: 1s ease-in;
+}
+
+.linkToPc div form select{
+  border: none;
+  font-size: 25px;
+  margin-left: 5%;
+  border-radius: 20px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.linkToPc div form select option{
+color: black;
+cursor: pointer;
+border: none;
+border-radius: 20px;
+}
+
+
+.linkToaccessories div form select{
+  border: none;
+  font-size: 25px;
+  margin-left: 5%;
+  border-radius: 20px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+.linkToaccessories div form select option{
+  color: black;
+}
+
+.linkToaccessories div form select:hover{
+  color: aqua;
+  background-color: grey;
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.listOfLinks div button{
+     border: none;
+     color: bisque;
+     font-size: 25px;
+     margin-left: 5%; background-color: aqua;
+     border-radius: 20px;
+     padding: 12px;
+     cursor: pointer;
+     transition: all 1s ease-out;
+}
+
+.listOfLinks div button:hover{
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+  color: grey;
+}
